@@ -1,0 +1,25 @@
+Package: rjd3toolkitx
+Type: Package
+Title: Advanced functions of 'JDemetra+ 3.0'
+Version: 0.1.0
+Authors@R: c(
+  person("Jean", "Palate", role = c("aut", "cre"),
+                email = "jean.palate@nbb.be"))
+Description: Interface around 'JDemetra+ 3.x' (<https://github.com/jdemetra/jdemetra-core>) seasonal adjustment software, STACE project.
+Depends:
+  R (>= 3.6.0)
+Imports:
+  rJava (>= 1.0-6),
+  rjd3toolkit (>= 3.2.1)
+Remotes:
+  github::rjdemetra/rjd3toolkit
+SystemRequirements: Java JRE 17 or higher
+License: EUPL
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
+BugReports: https://github.com/rjdemetra/rjd3tramoseats/issues
+Encoding: UTF-8
+Collate: 
+    'polynomials.R'
+    'utils.R'
+    'zzz.R'
