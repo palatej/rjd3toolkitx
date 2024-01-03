@@ -59,3 +59,17 @@ polynomial_of_roots<-function(roots, p0=1, smooth=TRUE, reorder=FALSE){
                  'polynomialOfRoots', jM, as.numeric(p0), as.logical(smooth), as.logical(reorder)))
 }
 
+#' Convolution of a given polynomial (=P(x)*P(1/x))
+#'
+#' @param p The given polynomial
+#'
+#' @return Powers 0 to degree(p)
+#' @export
+#'
+#' @examples
+#' p<-c(1,2,3,4)
+#' polynomial_convolve(p)
+polynomial_convolve<-function(p){
+  c<-.jcall('jdplus/toolkitx/base/r/Polynomials', '[D', 'convolve',.jarray(as.numeric(p)))
+  return (c)
+}
