@@ -106,8 +106,8 @@ arima_pi_weights<-function(model, n){
                  .jcast(jarima,'jdplus/toolkit/base/core/arima/IArimaModel' ), as.integer(n)))
 }
 
-#' Extends a series with ARIMA forecasts/backcasts compute by simple recursions (missing residuals are considered as 0)
-#' with exact diffuse initialization
+#' Extends a series with ARIMA forecasts/backcasts. Exact intialization for the MA part, conditional initialization (=0)
+#' for the AR part
 #'
 #'
 #' @param data The data to extend

@@ -2,8 +2,8 @@
 % Please edit documentation in R/arima.R
 \name{arima_extends_fast}
 \alias{arima_extends_fast}
-\title{Extends a series with ARIMA forecasts/backcasts compute by simple recursions (missing residuals are considered as 0)
-with exact diffuse initialization}
+\title{Extends a series with ARIMA forecasts/backcasts. Exact intialization for the MA part, conditional initialization (=0)
+for the AR part}
 \usage{
 arima_extends_fast(data, model, mean = 0, nbcasts = 0, nfcasts = 0)
 }
@@ -22,8 +22,8 @@ arima_extends_fast(data, model, mean = 0, nbcasts = 0, nfcasts = 0)
 The extended series
 }
 \description{
-Extends a series with ARIMA forecasts/backcasts compute by simple recursions (missing residuals are considered as 0)
-with exact diffuse initialization
+Extends a series with ARIMA forecasts/backcasts. Exact intialization for the MA part, conditional initialization (=0)
+for the AR part
 }
 \examples{
 model<-rjd3toolkit::sarima_model(
