@@ -2,12 +2,12 @@
 NULL
 
 .onLoad <- function(libname, pkgname) {
-  if (! requireNamespace("rjd3toolkit", quietly = T)) stop("Loading rjd3 libraries failed")
+  if (! requireNamespace("rjd3sts", quietly = T)) stop("Loading rjd3 libraries failed")
 
   result <- rJava::.jpackage(pkgname, lib.loc=libname)
   if (!result) stop("Loading java packages failed")
 
   # reload extractors
-  # rjd3toolkit::reload_dictionaries()
+  rjd3toolkit::reload_dictionaries()
 }
 

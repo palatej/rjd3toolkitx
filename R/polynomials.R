@@ -1,4 +1,4 @@
-#' @importFrom rJava .jpackage .jcall .jnull .jarray .jevalArray .jcast .jcastToArray .jinstanceof is.jnull .jnew .jclass
+#' @include utils.R
 NULL
 
 #' Evaluates a polynomial for given values

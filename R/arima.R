@@ -1,4 +1,4 @@
-#' @importFrom rJava .jcall .jcast
+#' @include utils.R
 NULL
 
 .jd3_arima<-function(model){
