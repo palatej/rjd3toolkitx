@@ -10,8 +10,8 @@ Depends:
   R (>= 3.6.0)
 Imports:
   rJava (>= 1.0-6),
-  rjd3toolkit (>= 3.3.1),
-  rjd3sts (>= 2.2.1)
+  rjd3toolkit (>= 3.5.1.9500),
+  rjd3sts (>= 2.3.0.9000)
 Remotes:
   github::rjdemetra/rjd3toolkit
 SystemRequirements: Java JRE 17 or higher
@@ -22,8 +22,7 @@ BugReports: https://github.com/rjdemetra/rjd3tramoseats/issues
 Encoding: UTF-8
 Collate: 
     'utils.R'
-    'adaptivesplines.R'
     'arima.R'
+    'outliers.R'
     'polynomials.R'
-    'tdarima.R'
     'zzz.R'
